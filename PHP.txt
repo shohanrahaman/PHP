@@ -1,0 +1,7 @@
+  =========PHP=========
+
+	# PHP is an acronym for "PHP : Hypertext Preprocessor".
+	# PHP is server-side scripting language designed for web development.
+	# PHP files can contain text, HTML, CSS, JavaScript, and PHP code.
+	# PHP Case Sensitivity.
+	# PHP is a Loosely Typed Language.

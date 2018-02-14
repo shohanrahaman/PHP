@@ -1,0 +1,33 @@
+	<!DOCTYPE HTML>
+
+	<html lang="en-US">
+
+	<head>
+	
+	<meta charset="UTF-8">
+	
+	<title>Php Variable</title>
+
+	</head>
+
+	<body>
+
+
+	<?php
+	
+
+	
+	//Declaring Variable
+	
+	$text = "Hello World";
+	
+	$x = 5;
+	
+	$y = 10.5;
+		
+	
+	?>
+
+	</body>
+
+	</html>

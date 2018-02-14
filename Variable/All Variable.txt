@@ -1,0 +1,88 @@
+	<!DOCTYPE HTML>
+
+	<html lang="en-US">
+
+	<head>
+	
+	<meta charset="UTF-8">
+	
+	<title>Php Variable</title>
+
+	</head>
+
+	<body>
+	
+	<?php
+
+	
+	
+	//Three type of variable
+		
+	#global, local, static
+
+		
+	
+	$x = 50; //global variable
+	
+	$y = 80; 
+	
+
+	
+	function myFunction(){
+	
+	
+	$y = 60; //local variable
+	
+	
+	echo $y;
+	
+	
+	}
+	
+
+	
+	// Using global keyword, we can access global variable
+
+	
+	function myFunction2(){
+	
+	
+	global $x;
+
+	echo $x;
+	
+	
+	}
+
+	
+	
+	//PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable.
+
+	
+	function myFunction3(){
+	
+	
+	$GLOBALS['y'] = $GLOBALS['x']+$GLOBALS['y'];
+	
+	
+	}
+	
+	
+	
+	//static variable
+	
+	function myFunction4(){
+	
+	
+	static $z = 50; //static variable
+	
+	echo $z;
+	
+	
+	}
+	
+	?>
+
+	</body>
+
+	</html>
