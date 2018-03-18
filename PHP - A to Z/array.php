@@ -7,24 +7,38 @@
 <body>
 	<?php 
 	
-		//Indexed arrays - Arrays with a numeric index
-		$cars = array("Volvo","BMW","Toyota");
-		echo $cars[1]."</br>";
-		echo count($cars)."</br>"; // array length using count
-		
-		//Associative arrays - Arrays with named keys
-		$age = array ("shamim"=>"30","shohan"=>"50","rahaman"=>"70");
-		echo "Age : ".$age['shamim']."</br>";
-		
-		//Array Sorting
-		$sports = array("cricket","football","badminton");
-		sort($sports); // rsort($sports) | asort($sports) | ksort($sports) 
-		$clength = count($sports);
-		for($x = 0; $x <$clength; $x++){
-			
-			echo $sports[$x]."</br>";
-			
-		}
+		//3 types of array in PHP.
+				//Indexed Array
+				$season = array("summer","winter","spring","autumn");
+				foreach ($season as $x) {
+					echo $x."<br>";
+				}
+				$season[0]="shohan";
+				$season[1]="shamim";
+				$season[2]="sazal";
+				$season[3]="saiful";
+				echo "Season are: $season[0], $season[1], $season[2] and $season[3]";
+
+				//Associative Array
+				$salary = array("rafin"=>"50000","rakin"=>"60000","rubab"=>"70000");
+				foreach ($salary as $k => $v) {
+					echo "Key : ".$k." Value : ".$v."<br/>";
+				}
+				
+				//Multidimensional Array
+				$emp = array
+				(
+				array(1,"labib",400000),
+				array(2,"rajim",500000),
+				array(3,"tubin",300000)
+				);
+				
+				for ($row = 0; $row < 3; $row++) {
+				for ($col = 0; $col < 3; $col++) {
+				echo $emp[$row][$col]."  ";
+				}
+				echo "<br/>";
+				}
 	?>
 	
 </body>
